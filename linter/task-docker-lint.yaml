@@ -54,6 +54,8 @@ spec:
           trap env EXIT
           set -x
         fi
+        pwd
+        ls
 
         if [ -f ${DOCKER_FILE_PATH}/${DOCKER_FILE} ]; then
             echo -e "Dockerfile found at: ${DOCKER_FILE_PATH}/${DOCKER_FILE}"
